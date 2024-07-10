@@ -13,7 +13,7 @@ function About() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100vw",
-    height: "100vh",
+    height: "900px",
   };
   return (
     <>
