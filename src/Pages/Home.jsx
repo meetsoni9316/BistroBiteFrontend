@@ -11,7 +11,7 @@ function Home() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100vw",
-    height: "800px",
+    height: "850px",
   };
 
   return (
