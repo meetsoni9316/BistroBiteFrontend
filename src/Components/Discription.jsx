@@ -8,9 +8,9 @@ function Discription() {
     <>
       <div>
         <div className="md:mt-40 mt-32 md:ml-16 md:ml-10 ml-4  text-6xl font-bold z-0 moving-text">
-          {" "}
-          <span className="bg-gradient-to-r from-blue-500 to-sb-8000 text-transparent bg-clip-text font-bold line line-1">
-            {" "}
+          
+          <span className="bg-gradient-to-r from-blue-500 to-sb-8000 text-transparent bg-clip-text font-bold h-46  md:h-20 line line-1">
+            
             Discover Delight in Every Bite
           </span>
         </div>
