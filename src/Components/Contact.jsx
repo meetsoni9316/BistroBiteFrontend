@@ -52,7 +52,7 @@ function Contact() {
       <div className="bg-gradient-to-r from-mt to-ft mt-0 overflow-hidden h-screen">
         <Navbar />
         <div className=" flex  items-center  justify-center md:mt-28 mt-16 ">
-          <div className="card md:w-96 md:h-105 glass ">
+          <div className="card md:w-96 md:h-105 w-80 h-96 glass  ">
             <div className="card-body justify-center items-center ">
               <h2 className="card-title text-sb text-2xl font-bold">
                 Contact Us
@@ -72,7 +72,7 @@ function Contact() {
                   </svg>
                   <input
                     type="text"
-                    className="grow w-64"
+                    className="grow md:w-64 w-36"
                     placeholder="Username"
                     {...register("username", { required: true })}
                   />
@@ -96,7 +96,7 @@ function Contact() {
                   </svg>
                   <input
                     type="email"
-                    className="grow w-64"
+                    className="grow md:w-64 w-36"
                     placeholder="Email"
                     {...register("email", { required: true })}
                   />
@@ -123,7 +123,7 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Write your message here"
-                    className="w-64 px-3 grow "
+                    className="w-64 px-3 grow md:w-64 w-36 "
                     {...register("message", { required: true })}
                   />
                 </label>
