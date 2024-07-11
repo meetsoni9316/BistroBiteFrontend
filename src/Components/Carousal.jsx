@@ -3,7 +3,7 @@ import React from "react";
 function Carousal() {
   return (
     <>
-      <div className="carousel carousel-center md:max-w-screen-2xl max-w-full p-4 space-x-4 bg-cho rounded-box">
+      <div className="carousel carousel-center md:max-w-full max-w-full p-4 space-x-4 bg-cho rounded-box">
         <div className="carousel-item">
           <div className="card card-compact md:w-96 w-80 bg-base-100 shadow-xl">
             <figure>
