@@ -120,7 +120,7 @@ function Feedback() {
                   <input
                     type="text"
                     placeholder="Write your message here"
-                    className=" px-3 md:w-64 w-36 "
+                    className="md:w-64 w-36 px-3 grow"
                     {...register("message", { required: true })}
                   />
                 </label>
