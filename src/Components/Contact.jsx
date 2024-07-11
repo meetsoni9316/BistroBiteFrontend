@@ -123,7 +123,7 @@ function Contact() {
                   <input
                     type="text"
                     placeholder="Write your message here"
-                    className="w-64 px-3 grow md:w-64 w-36 "
+                    className="px-3 grow md:w-64 w-36 "
                     {...register("message", { required: true })}
                   />
                 </label>
