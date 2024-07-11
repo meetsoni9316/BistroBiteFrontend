@@ -53,7 +53,7 @@ function Reservation() {
       <div className="bg-gradient-to-r from-mt to-ft overflow-hidden h-screen">
         <Navbar />
         <div className=" flex items-center justify-center md:mt-8 mt-20">
-          <div className="card md:w-96 md:h-105 glass">
+          <div className="card md:w-96 md:h-105 w-80 h-96 glass">
             <div className="card-body justify-center items-center ">
               <h2 className="card-title text-sb text-2xl font-bold ">
                 Reserve Your Spot
@@ -72,7 +72,7 @@ function Reservation() {
                   </svg>
                   <input
                     type="text"
-                    className="grow w-64"
+                    className="grow md:w-64 w-36"
                     placeholder="Name"
                     {...register("name", { required: true })}
                   />
@@ -97,7 +97,7 @@ function Reservation() {
                   </svg>
                   <input
                     type="email"
-                    className="grow w-64"
+                    className="grow md:w-64 w-36"
                     placeholder="Email"
                     {...register("email", { required: true })}
                   />
@@ -121,7 +121,7 @@ function Reservation() {
                   </svg>
                   <input
                     type="text"
-                    className="grow w-64"
+                    className="grow md:w-64 w-36"
                     placeholder="Phone Number"
                     {...register("number", { required: true })}
                   />
@@ -145,7 +145,7 @@ function Reservation() {
                     <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5" />
                   </svg>
                   <select
-                    className="grow w-64 "
+                    className="grow md:w-64 w-36 "
                     {...register("meal", { required: true })}
                   >
                     <option disabled selected className="bg-cho text ">
@@ -176,7 +176,7 @@ function Reservation() {
                   </svg>
                   <input
                     type="date"
-                    className="grow w-64 "
+                    className="grow md:w-64 w-36 "
                     {...register("date", { required: true })}
                   />
                 </label>
