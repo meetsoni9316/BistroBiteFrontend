@@ -3,7 +3,7 @@ import React from "react";
 function Review() {
   return (
     <div className=" mt-4 justify-items-center items-center grid md:grid-cols-3 md:gap-6 grid-cols-1 gap-5">
-      <div className="card md:w-96 w-80 bg-neutral text-neutral-content ">
+      <div className="card w-80 bg-neutral text-neutral-content md:ml-6 ">
         <div className="card-body items-center text-center">
           <h2 className="card-title text-yel">Jane Doe</h2>
           <p>
@@ -17,7 +17,7 @@ function Review() {
         </div>
       </div>
 
-      <div className="card md:w-96 w-80 bg-neutral text-neutral-content ">
+      <div className="card  w-80 bg-neutral text-neutral-content ">
         <div className="card-body items-center text-center">
           <h2 className="card-title text-yel">John Smith</h2>
           <p>
@@ -31,7 +31,7 @@ function Review() {
         </div>
       </div>
 
-      <div className="card md:w-96 w-80 bg-neutral text-neutral-content ">
+      <div className="card  w-80 bg-neutral text-neutral-content  md:mr-6 ">
         <div className="card-body items-center text-center">
           <h2 className="card-title text-yel">Lisa Johnson</h2>
           <p>
@@ -45,7 +45,7 @@ function Review() {
         </div>
       </div>
 
-      <div className="card md:w-96 w-80 bg-neutral text-neutral-content ">
+      <div className="card  w-80 bg-neutral text-neutral-content md:ml-6 ">
         <div className="card-body items-center text-center">
           <h2 className="card-title text-yel">Mark Brown</h2>
           <p>
@@ -59,7 +59,7 @@ function Review() {
         </div>
       </div>
 
-      <div className="card md:w-96 w-80 bg-neutral text-neutral-content ">
+      <div className="card  w-80 bg-neutral text-neutral-content ">
         <div className="card-body items-center text-center">
           <h2 className="card-title text-yel">Emily Davis</h2>
           <p>
@@ -73,7 +73,7 @@ function Review() {
         </div>
       </div>
 
-      <div className="card md:w-96 w-80 bg-neutral text-neutral-content ">
+      <div className="card  w-80 bg-neutral text-neutral-content md:mr-6 ">
         <div className="card-body items-center text-center">
           <h2 className="card-title text-yel">Michael Wilson</h2>
           <p>
