@@ -51,7 +51,7 @@ function Signup() {
       <div className="bg-gradient-to-r from-mt to-ft overflow-hidden h-screen">
         <Navbar />
         <div className=" flex items-center justify-center md:mt-28 mt-48">
-          <div className="card md:w-96 md:h-105 glass">
+          <div className="card md:w-96 md:h-105 w-80 h-96 glass">
             <div className="card-body justify-center items-center ">
               <h2 className="card-title text-sb text-2xl font-bold ">Signup</h2>
 
@@ -69,7 +69,7 @@ function Signup() {
                   </svg>
                   <input
                     type="text"
-                    className="grow w-64"
+                    className="grow w-md:w-64 w-36"
                     placeholder="Username"
                     {...register("username", { required: true })}
                   />
@@ -93,7 +93,7 @@ function Signup() {
                   </svg>
                   <input
                     type="email"
-                    className="grow w-64"
+                    className="grow md:w-64 w-36"
                     placeholder="Email"
                     {...register("email", { required: true })}
                   />
@@ -118,7 +118,7 @@ function Signup() {
                   <input
                     type="password"
                     placeholder="Enter your password"
-                    className="w-64 grow  rounded-md outline-none "
+                    className="md:w-64 w-36 grow  rounded-md outline-none "
                     {...register("password", { required: true })}
                   />
                 </label>
