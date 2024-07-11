@@ -51,7 +51,7 @@ function Signup() {
       <div className="bg-gradient-to-r from-mt to-ft overflow-hidden h-screen">
         <Navbar />
         <div className=" flex items-center justify-center md:mt-28 mt-48">
-          <div className="card md:w-96 md:h-105 w-80 h-96 glass">
+          <div className="card md:w-96 md:h-105 w-92 h-96 glass">
             <div className="card-body justify-center items-center ">
               <h2 className="card-title text-sb text-2xl font-bold ">Signup</h2>
 
