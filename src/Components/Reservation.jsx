@@ -26,7 +26,7 @@ function Reservation() {
     };
 
     await axios
-      .post("https://bistrobitrbackend.onrender.com/reservation", userinfo)
+      .post("https://bistrobitrbackend.onrender.com/bistrobite/reservation", userinfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
