@@ -136,3 +136,24 @@ Currently, two official plugins are available:
 </body>
 </html>
 
+<footer style="background: #333; color: white; text-align: center; padding: 20px 10px; margin-top: 20px; font-size: 1rem;">
+  <p style="margin: 0;">&copy; 2025 My Blog. All rights reserved.</p>
+  <div style="margin-top: 10px;">
+    <a href="#" style="color: #00bcd4; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+    <a href="#" style="color: #00bcd4; text-decoration: none; margin: 0 10px;">Terms of Use</a>
+    <a href="#" style="color: #00bcd4; text-decoration: none; margin: 0 10px;">Contact Us</a>
+  </div>
+  <style>
+    @media screen and (max-width: 768px) {
+      footer {
+        font-size: 0.9rem;
+        padding: 15px 5px;
+      }
+      footer a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  </style>
+</footer>
+
