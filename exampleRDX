@@ -1,59 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Image Gallery</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Flexbox Image Gallery</h1>
-  <div class="gallery">
-    <div class="gallery-item"><img src="https://via.placeholder.com/300" alt="Image 1"></div>
-    <div class="gallery-item"><img src="https://via.placeholder.com/300" alt="Image 2"></div>
-    <div class="gallery-item"><img src="https://via.placeholder.com/300" alt="Image 3"></div>
-    <div class="gallery-item"><img src="https://via.placeholder.com/300" alt="Image 4"></div>
-    <div class="gallery-item"><img src="https://via.placeholder.com/300" alt="Image 5"></div>
-    <div class="gallery-item"><img src="https://via.placeholder.com/300" alt="Image 6"></div>
-  </div>
-</body>
-</html>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  text-align: center;
-}
+Create a simple webpage illustrating the CSS Box Model
 
-h1 {
-  margin: 20px 0;
-  color: #333;
-}
+Develop a basic HTML page containing a single <div> element with text inside it. Apply CSS to showcase the different parts of the Box Model (content-box, padding, border, and margin). Set distinct colors for padding, border, and margin so that each is visually distinguishable. For example, use padding: 20px, border: 5px solid blue, and margin: 30px. Ensure that each part of the Box Model is clearly visible when the page is rendered.
+Objective:
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  padding: 20px;
-}
-
-.gallery-item {
-  flex: 1 1 calc(33.333% - 32px); /* Adjust size dynamically */
-  max-width: calc(33.333% - 32px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.1);
-}
+Learn to identify and manipulate the content, padding, border, and margin layers using CSS.
