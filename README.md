@@ -13,130 +13,126 @@ Currently, two official plugins are available:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Blog Layout</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="header">
+<body style="margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4;">
+
+  <!-- Header -->
+  <header style="position: sticky; top: 0; background: #333; color: white; padding: 15px 0; text-align: center; font-size: 1.5rem; z-index: 10; width: 100%;">
     <h1>My Blog</h1>
   </header>
-  <div class="container">
-    <main class="main-content">
-      <h2>Welcome to My Blog</h2>
-      <p>
-        <img src="https://via.placeholder.com/150" alt="Post Thumbnail" class="thumbnail">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor turpis ut sapien dignissim, vel aliquam elit consequat. Integer eget augue id erat tincidunt aliquet. 
+
+  <!-- Container -->
+  <div style="width: 90%; margin: 20px auto; overflow: hidden;">
+
+    <!-- Main Content -->
+    <main style="float: left; width: 70%; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h2 style="color: #333; margin-bottom: 15px;">Welcome to My Blog</h2>
+      <p style="margin-bottom: 20px;">
+        <img src="https://via.placeholder.com/150" alt="Post Thumbnail" style="float: left; margin-right: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor turpis ut sapien dignissim, vel aliquam elit consequat. Integer eget augue id erat tincidunt aliquet. Praesent at urna metus. Aliquam erat volutpat. Nam ut purus ac nunc elementum vehicula nec id sapien.
       </p>
-      <p>More placeholder content for testing the layout.</p>
+      <p style="margin-top: 20px; color: #555;">More placeholder content for testing the layout. This area can be filled with engaging blog posts, news, or other content!</p>
     </main>
-    <aside class="sidebar">
-      <div class="recent-posts">
-        <h3>Recent Posts</h3>
-        <ul>
-          <li>Post 1</li>
-          <li>Post 2</li>
-          <li>Post 3</li>
-          <li>Post 4</li>
-          <li>Post 5</li>
-          <li>Post 6</li>
+
+    <!-- Sidebar -->
+    <aside style="float: left; width: 30%; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-left: 20px;">
+      <div style="height: 400px; overflow: auto; padding: 10px; border: 1px solid #ddd; background: #f9f9f9; border-radius: 4px;">
+        <h3 style="color: #333; margin-bottom: 10px; text-align: center;">Recent Posts</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 1</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 2</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 3</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 4</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 5</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 6</li>
         </ul>
       </div>
     </aside>
+
   </div>
+
+  <!-- Responsive Design -->
+  <style>
+    @media screen and (max-width: 768px) {
+      main, aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+      img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+
 </body>
 </html>
 
 
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Body and Container */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
-}
 
-.container {
-  width: 90%;
-  margin: 20px auto;
-  overflow: hidden; /* Clear floats */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog Layout</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4;">
 
-/* Header */
-.header {
-  position: sticky;
-  top: 0;
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  z-index: 10;
-}
+  <!-- Header -->
+  <header style="position: sticky; top: 0; background: #333; color: white; padding: 15px 0; text-align: center; font-size: 1.5rem; z-index: 10; width: 100%;">
+    <h1>My Blog</h1>
+  </header>
 
-/* Main Content */
-.main-content {
-  float: left;
-  width: 70%;
-  padding: 20px;
-  background: #f4f4f4;
-}
+  <!-- Container -->
+  <div style="width: 90%; margin: 20px auto; overflow: hidden;">
 
-.main-content .thumbnail {
-  float: left;
-  margin-right: 15px;
-  width: 150px;
-  height: auto;
-}
+    <!-- Main Content -->
+    <main style="float: left; width: 70%; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h2 style="color: #333; margin-bottom: 15px;">Welcome to My Blog</h2>
+      <p style="margin-bottom: 20px;">
+        <img src="https://via.placeholder.com/150" alt="Post Thumbnail" style="float: left; margin-right: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor turpis ut sapien dignissim, vel aliquam elit consequat. Integer eget augue id erat tincidunt aliquet. Praesent at urna metus. Aliquam erat volutpat. Nam ut purus ac nunc elementum vehicula nec id sapien.
+      </p>
+      <p style="margin-top: 20px; color: #555;">More placeholder content for testing the layout. This area can be filled with engaging blog posts, news, or other content!</p>
+    </main>
 
-/* Sidebar */
-.sidebar {
-  float: left;
-  width: 30%;
-  padding: 20px;
-  background: #ddd;
-}
+    <!-- Sidebar -->
+    <aside style="float: left; width: 30%; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-left: 20px;">
+      <div style="height: 400px; overflow: auto; padding: 10px; border: 1px solid #ddd; background: #f9f9f9; border-radius: 4px;">
+        <h3 style="color: #333; margin-bottom: 10px; text-align: center;">Recent Posts</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 1</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 2</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 3</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 4</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 5</li>
+          <li style="padding: 10px 0; border-bottom: 1px solid #ddd; color: #555;">Post 6</li>
+        </ul>
+      </div>
+    </aside>
 
-.recent-posts {
-  height: 400px;
-  overflow: auto;
-  background: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
+  </div>
 
-.recent-posts ul {
-  list-style: none;
-  padding: 0;
-}
+  <!-- Responsive Design -->
+  <style>
+    @media screen and (max-width: 768px) {
+      main, aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+      img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
 
-.recent-posts li {
-  padding: 5px 0;
-  border-bottom: 1px solid #eee;
-}
+</body>
+</html>
 
-/* Clearfix for Floats */
-.container::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .main-content,
-  .sidebar {
-    float: none;
-    width: 100%;
-  }
-
-  .main-content .thumbnail {
-    float: none;
-    display: block;
-    margin: 0 auto 15px;
-  }
-}
