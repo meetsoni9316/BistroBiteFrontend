@@ -44,3 +44,99 @@ Currently, two official plugins are available:
   </div>
 </body>
 </html>
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden; /* Clear floats */
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+/* Main Content */
+.main-content {
+  float: left;
+  width: 70%;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.main-content .thumbnail {
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  background: #ddd;
+}
+
+.recent-posts {
+  height: 400px;
+  overflow: auto;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.recent-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-posts li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Clearfix for Floats */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content,
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+
+  .main-content .thumbnail {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
