@@ -1,72 +1,20 @@
-Create a simple webpage illustrating the CSS Box Model
+Design a Blog Layout Using Both CSS Box Model and Flexbox
 
-Develop a basic HTML page containing a single <div> element with text inside it. Apply CSS to showcase the different parts of the Box Model (content-box, padding, border, and margin). Set distinct colors for padding, border, and margin so that each is visually distinguishable. For example, use padding: 20px, border: 5px solid blue, and margin: 30px. Ensure that each part of the Box Model is clearly visible when the page is rendered.
+Build a responsive blog page with the following layout:
+
+    Header: Create a full-width header section containing a blog title and a navigation bar. Use Flexbox to align and space out the navigation links.
+    Content Area: Include two sections: a main content section for blog posts and a sidebar for additional widgets/links. Use Flexbox to place them side by side. Set widths using the Box Model (e.g., a main content area width of 70% and a sidebar width of 30%). Add padding, margins, and borders to simulate realistic spacing and design.
+    Footer: Add a footer section containing copyright text and social media links. Use Flexbox to center-align the content within the footer.
+
+Functional Flow:
+
+- Ensure the layout is fully responsive, adapting to different screen sizes using Flexbox properties like flex-wrap and media queries.
+- Use distinct colors and borders around each component (header, content, sidebar, footer) to demonstrate your understanding of the Box Model.
+Business Logic:
+
+- The content area should be scrollable if its height exceeds the viewport height.
+- The navigation bar should collapse into a vertical layout on smaller screens (e.g., mobile devices) using media queries.
+- All elements should have appropriate margins, paddings, and borders to create a visually appealing layout.
 Objective:
 
-Learn to identify and manipulate the content, padding, border, and margin layers using CSS.
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Box Model Example</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>CSS Box Model</h1>
-  <div class="box">
-    This is a box with visible padding, border, and margin.
-  </div>
-</body>
-</html
-/* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #f0f0f0;
-}
-
-h1 {
-  margin-top: 20px;
-  color: #333;
-}
-
-/* Box Model styles */
-.box {
-  width: 300px;
-  padding: 20px;
-  border: 5px solid blue;
-  margin: 30px;
-  
-  /* Content-box is the default, so we don't need to specify it, but we'll include it for clarity */
-  box-sizing: content-box;
-  
-  background-color: #ffeb3b; /* Background color of the content area */
-  color: #333;
-  font-size: 18px;
-  text-align: center;
-}
-
-/* Visual demonstration of padding, border, and margin */
-.box {
-  /* Padding color (inside the content area) */
-  padding: 20px;
-  background-color: #ffeb3b;
-  border: 5px solid blue;
-}
-
-.box:before {
-  content: "Padding (20px)";
-  display: block;
-  margin-top: 10px;
-  color: green;
-}
-
-.box:after {
-  content: "Border (5px solid blue)";
-  display: block;
-  margin-top: 10px;
-  color: blue;
-}
+Develop a comprehensive understanding of combining the CSS Box Model and Flexbox to build modern, responsive web layouts.
