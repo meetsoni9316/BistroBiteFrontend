@@ -1,20 +1,178 @@
-Design a Blog Layout Using Both CSS Box Model and Flexbox
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="blog-title">My Blog</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-Build a responsive blog page with the following layout:
+    <div class="content-area">
+        <main class="main-content">
+            <article>
+                <h2>Blog Post Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu libero...</p>
+                <p>Curabitur nec facilisis tortor. Mauris tempus fringilla arcu vel aliquet...</p>
+            </article>
+            <article>
+                <h2>Another Blog Post</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu libero...</p>
+            </article>
+        </main>
 
-    Header: Create a full-width header section containing a blog title and a navigation bar. Use Flexbox to align and space out the navigation links.
-    Content Area: Include two sections: a main content section for blog posts and a sidebar for additional widgets/links. Use Flexbox to place them side by side. Set widths using the Box Model (e.g., a main content area width of 70% and a sidebar width of 30%). Add padding, margins, and borders to simulate realistic spacing and design.
-    Footer: Add a footer section containing copyright text and social media links. Use Flexbox to center-align the content within the footer.
+        <aside class="sidebar">
+            <h3>Widgets</h3>
+            <ul>
+                <li><a href="#">Widget 1</a></li>
+                <li><a href="#">Widget 2</a></li>
+                <li><a href="#">Widget 3</a></li>
+            </ul>
+        </aside>
+    </div>
 
-Functional Flow:
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
 
-- Ensure the layout is fully responsive, adapting to different screen sizes using Flexbox properties like flex-wrap and media queries.
-- Use distinct colors and borders around each component (header, content, sidebar, footer) to demonstrate your understanding of the Box Model.
-Business Logic:
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-- The content area should be scrollable if its height exceeds the viewport height.
-- The navigation bar should collapse into a vertical layout on smaller screens (e.g., mobile devices) using media queries.
-- All elements should have appropriate margins, paddings, and borders to create a visually appealing layout.
-Objective:
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
 
-Develop a comprehensive understanding of combining the CSS Box Model and Flexbox to build modern, responsive web layouts.
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.blog-title {
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.content-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    overflow-y: auto;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
